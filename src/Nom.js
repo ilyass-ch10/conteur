@@ -1,13 +1,14 @@
 import { useState } from "react"
 import { Component } from 'react';
 function  CangeNom(){
-  const [nom,setnom]=useState("")
+  const [a,seta]=useState(0)
 
-  const change=(event)=>{setnom(event.target.value)}
  
   return ( <div>
-    <input type='text' value={nom} onChange={change} placeholder='saisir ici'/>
-    <p> salut:{nom}</p>
+    <p>{a}</p>
+    <button onClick={()=>seta(a+1) }>+</button>
+    <button onClick={()=>seta(a-1) }>-</button>
+ 
     </div>
   )
 

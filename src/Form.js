@@ -26,8 +26,10 @@ function Form() {
             value={pass}
             onChange={(e) => setPassword(e.target.value)}
         />
+        
 
         <input type="submit" value="Envoyer" />
+        <p>{nom}</p>
        </form>
     )
 }
